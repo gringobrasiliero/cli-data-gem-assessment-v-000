@@ -27,7 +27,7 @@ puts "Displaying List of #{Slideshower::Search.subject}photos."
 puts
 
    Photo::all.each do |photo| #=> <Objectx20289498403 @name=dog @url: http222kdls >
-    if x ==5
+    if x > 4
       break
     end
      if photo.name == nil || photo.name.value == ""
