@@ -39,7 +39,7 @@ puts
     puts "http://www.pexels.com#{photo.url}"
     puts
 
-    binding.pry
+    
       end
 end
 
