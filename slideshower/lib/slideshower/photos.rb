@@ -21,17 +21,13 @@ end
 end
 
 def self.list
-x = 0
 puts
 puts "Displaying List of #{Slideshower::Search.subject}photos."
 puts
 
-   Photo::all.each do |photo| #=> <Objectx20289498403 @name=dog @url: http222kdls >
-    if x > 4
-      break
-    end
+   Photo::all.each.with_index(1) do |photo, index| #=> <Objectx20289498403 @name=dog @url: http222kdls >
      if photo.name == nil || photo.name.value == ""
-       puts "#{Slideshower::Search.subject.capitalize}#{x+=1}"
+       puts "#{Slideshower::Search.subject.capitalize}#{index}"
      else
          puts photo.name
      end
@@ -39,7 +35,7 @@ puts
     puts "http://www.pexels.com#{photo.url}"
     puts
 
-    
+
       end
 end
 
