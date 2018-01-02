@@ -28,7 +28,7 @@ puts
 
    Photo::all.each do |photo| #=> <Objectx20289498403 @name=dog @url: http222kdls >
     if x ==5
-      exit
+      break
     end
      if photo.name == nil || photo.name.value == ""
        puts "#{Slideshower::Search.subject.capitalize}#{x+=1}"
