@@ -26,15 +26,19 @@ puts
 puts "Displaying List of #{Slideshower::Search.subject}photos."
 puts
 
-   Photo::all.each do |i|
-     if i.name == nil || i.name.value == ""
+   Photo::all.each do |photo| #=> <Objectx20289498403 @name=dog @url: http222kdls >
+    if x ==5
+      exit
+    end
+     if photo.name == nil || photo.name.value == ""
        puts "#{Slideshower::Search.subject.capitalize}#{x+=1}"
      else
-         puts i.name
+         puts photo.name
      end
 
-    puts "http://www.pexels.com#{i.url}"
+    puts "http://www.pexels.com#{photo.url}"
     puts
+    x+=1
       end
 end
 
